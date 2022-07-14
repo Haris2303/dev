@@ -1,0 +1,8 @@
+/* SASS Variables -> 
+global scope, "-" == "_" , !global -> local to gobal, 
+if it has a variable with the same name then the local variable takes precedence, 
+if not then the global variable is accessed, */
+h1 {
+  color: green;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+[{
+        "idSiswa": 1,
+        "nama": "Haris",
+        "jurusan": "Rekayasa Perangkat Lunak",
+        "email": "haris@smkn1sorong"
+    },
+    {
+        "idSiswa": 2,
+        "nama": "Revaya",
+        "jurusan": "Rekayasa Perangkat Lunak",
+        "email": "Revaya@smkn1sorong"
+    },
+    {
+        "idSiswa": 3,
+        "nama": "Harith",
+        "jurusan": "Teknik Komputer dan Jaringan",
+        "email": "harith@smkn1sorong"
+    }
+]

@@ -1,0 +1,43 @@
+// // CSS Variables
+// :root {
+//     --primry-color: rgb(24, 132, 255);
+//     --secondary-color: gray;
+// }
+// body {
+//     background-color: var(--secondary-color);
+// }
+// h1 {
+//     color: var(--primry-color);
+// }
+// p {
+//     color: var(--primry-color);
+// }
+
+/* SASS Variables -> 
+global scope, "-" == "_" , !global -> local to gobal, 
+if it has a variable with the same name then the local variable takes precedence, 
+if not then the global variable is accessed, */
+
+// $success-color: green;
+// $text-color: #3d3d3d;
+// $primary-color: red;
+// body {
+//     // change variable local to global
+//     $primary-color: rgb(24, 132, 255) !global;
+//     background-color: $primary-color;
+// }
+// h1 {
+//     background-color: $success-color;
+//     // color: $primary-color;
+// }
+// p {
+//     color: $text-color;
+// }
+// Map
+// $alert-danger: red;
+// $alert-success: green;
+// $alert-warning: orange;
+$alert: ( 'danger': red, 'success': green, 'warning': orange);
+h1 {
+    color: map-get($alert, 'success');
+}

@@ -1,0 +1,17 @@
+<h2>Detail Mahasiswa</h2>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <%= contact.nama %>
+        </h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            <%= contact.noHp %>
+        </h6>
+        <p class="card-text">
+            <%= contact.email %>
+        </p>
+        <a class="btn btn-danger badge" href="/contact/delete/<%= contact.nama %>">hapus</a>
+        <a class="btn btn-success badge" href="/contact/update/<%= contact.nama %>">edit</a>
+        <a href="/contact" class="card-link d-block mt-3">&laquo;Kembali</a>
+    </div>
+</div>
