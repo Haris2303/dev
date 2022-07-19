@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col">
+        <h1 class="text-center">Daftar Mahasiswa</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8">
+        <a class="btn btn-primary" href="/contact/add">Tambah Data</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+
+        <% if (msg.length !== 0) { %>
+            <div class="alert alert-success" role="alert">
+                <strong><%= msg %> </strong>
+            </div>
+
+            <% } %>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% contacts.forEach((contact, i) => { %>
+                            <tr>
+                                <td>
+                                    <%= i + 1 %>
+                                </td>
+                                <td>
+                                    <%= contact.nama %>
+                                </td>
+                                <td>
+                                    <h6><a href="/contact/<%= contact.nama %> " class="btn btn-dark badge bg-dark">Detail</a></h6>
+                                </td>
+                            </tr>
+                            <% }) %>
+                    </tbody>
+                </table>
+    </div>
+</div>
