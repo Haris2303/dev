@@ -5,12 +5,15 @@
             <%= contact.nama %>
         </h5>
         <h6 class="card-subtitle mb-2 text-muted">
-            <%= contact.noHp %>
+            <%= contact.nohp %>
         </h6>
         <p class="card-text">
             <%= contact.email %>
         </p>
-        <a class="btn btn-danger badge" href="/contact/delete/<%= contact.nama %>">hapus</a>
+        <form action="/contact?_method=DELETE" method="post" class="d-inline">
+            <input type="hidden" name="nama" value="<%= contact.nama %>">
+            <button type="submit" class="btn btn-danger badge" onclick="return confirm('yakin??')">hapus</button>
+        </form>
         <a class="btn btn-success badge" href="/contact/update/<%= contact.nama %>">edit</a>
         <a href="/contact" class="card-link d-block mt-3">&laquo;Kembali</a>
     </div>
