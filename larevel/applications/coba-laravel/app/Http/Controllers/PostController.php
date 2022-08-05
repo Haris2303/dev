@@ -10,15 +10,15 @@ class PostController
     {
         return view('posts', [
             "title" => "Blog",
-            "posts" => Post::getData()
+            "posts" => Post::all()
         ]);
     }
 
-    public function show($slug)
+    public function show(Post $post)
     {
         return view('post', [
             "title" => "Single Post",
-            "post" => Post::getSingleData($slug)
+            "post" => $post
         ]);
     }
 }
